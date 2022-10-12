@@ -1,0 +1,18 @@
+{
+  "name": "vite-plugin-wasm-example-local",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "my-crate": "file:./my-crate/pkg"
+  },
+  "devDependencies": {
+    "vite": "^3.1.7",
+    "vite-plugin-wasm": "file:../.."
+  },
+  "scripts": {
+    "wasm": "wasm-pack build ./my-crate --target bundler",
+    "dev": "vite",
+    "build": "vite build"
+  }
+}
