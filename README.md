@@ -49,3 +49,8 @@ See the issue [#8](https://github.com/Menci/vite-plugin-wasm/issues/8) and upstr
 # Notes
 
 TypeScript typing is broken. Since we can't declare a module with `Record<string, any>` as its named export map. Your `import ... from "./module.wasm";` will still got Vite's bulit-in typing, but the transformed code is fine. So just use an asterisk import `import * as wasmModule from "./module.wasm"` and type assertion (you have typing for your WASM files, right?).
+
+# Credit
+
+- Some examples pulled from [`vite-plugin-wasm-pack`](https://github.com/nshen/vite-plugin-wasm-pack)
+- [wasm-pack](https://rustwasm.github.io/docs/wasm-pack/introduction.html)

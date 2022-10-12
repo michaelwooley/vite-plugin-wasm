@@ -1,23 +1,24 @@
-# `vite-plugin-wasm-pack`: Example vite app
+# `vite-plugin-wasm`: Vanilla vite app w/ _npm crate import_
 
 # Quickstart
 
-TODO Fix this
+```bash
+git clone https://github.com/michaelwooley/vite-plugin-wasm
 
-    ```bash
-    git clone https://github.com/nshen/vite-plugin-wasm-pack
+cd vite-plugin-wasm-pack
 
-    cd vite-plugin-wasm-pack
+# Build the plugin itself
+npm i
+npm run build
 
-    # Build the plugin itself
-    yarn
-    yarn run build
+# Set up the Example
+cd ex/npm-crate
+npm i
 
-    # Set up the Example
-    cd example
-    yarn wasm # Build the wasm package
+# READY TO GO IN JS:
+npm run dev
 
-    # READY TO GO IN JS:
-    yarn dev
-    yarn build
-    ```
+# For prod:
+npm run build
+npm run preview
+```
