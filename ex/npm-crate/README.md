@@ -2,7 +2,7 @@
 
 # Quickstart
 
-TODO Update quickstart
+TODO Fix this
 
     ```bash
     git clone https://github.com/nshen/vite-plugin-wasm-pack
@@ -10,18 +10,14 @@ TODO Update quickstart
     cd vite-plugin-wasm-pack
 
     # Build the plugin itself
-    npm
-    npm run build
+    yarn
+    yarn run build
 
     # Set up the Example
     cd example
-    npm run wasm # Build the wasm package
+    yarn wasm # Build the wasm package
 
     # READY TO GO IN JS:
     yarn dev
     yarn build
     ```
-
-# Credit
-
-- Shamelessly pulled from [`vite-plugin-wasm`](https://github.com/nshen/vite-plugin-wasm-pack)

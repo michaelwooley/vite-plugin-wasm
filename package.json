@@ -23,7 +23,7 @@
     "build": "tsc",
     "test": "cross-env NODE_NO_WARNINGS=1 NODE_OPTIONS=--experimental-vm-modules jest --verbose --coverage --forceExit",
     "format": "prettier --write '**/*.{mjs,cjs,js,ts}'",
-    "pretest": "yarn --cwd e2e && playwright install firefox"
+    "pretest": "npm --cwd e2e && playwright install firefox"
   },
   "devDependencies": {
     "@jest/types": "^28.1.3",
